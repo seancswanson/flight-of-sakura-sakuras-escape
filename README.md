@@ -1,4 +1,4 @@
-# Flight of Sakura: ## _Sakura's Escape_
+# Flight of Sakura: _Sakura's Escape_
 
 > Blurb
 
