@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SAKURA I</title>
+  </head>
+
+  <style>
+      body {
+          width: 100vw;
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+          background: pink;
+      }
+
+      .app-bg {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100vw;
+          height: 75vh;
+      }
+
+    #far-buildings {
+      background: url(./static/assets/far-buildings.png) center center repeat-x;
+      background-size: contain;
+    }
+
+    #back-buildings {
+      background: url(./static/assets/back-buildings.png) center center repeat-x;
+      background-size: contain;
+    }
+
+    #foreground-buildings {
+      position: absolute;
+      bottom: 0;
+      background: url(./static/assets/foreground.png) center center repeat-x;
+      background-size: contain;
+    }
+  </style>
+
+  <body>
+    <div class="app-bg-wrapper">
+      <div class="app-bg" id="far-buildings"></div>
+      <div class="app-bg" id="back-buildings"></div>
+      <div class="app-bg" id="foreground-buildings"></div>
+    </div>
+  </body>
+</html>

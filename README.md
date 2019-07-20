@@ -33,3 +33,14 @@
 - [ ] 5. Link HTML file to app.js
 - [ ] 6. Create paddle, define movement.
 - More to come;
+
+
+---
+
+> Art Credits
+
+- Title Art by Me
+
+- Art by Charles Gabriel and Antifarea. Commissioned by OpenGameArt.org (http://opengameart.org)
+
+- BG by sethbyrd.com
