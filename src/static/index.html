@@ -8,46 +8,33 @@
   </head>
 
   <style>
-      body {
-          width: 100vw;
-          height: 100vh;
-          margin: 0;
-          padding: 0;
-          background: pink;
-      }
-
-      .app-bg {
-          position: relative;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100vw;
-          height: 75vh;
-      }
-
-    #far-buildings {
-      background: url(./static/assets/far-buildings.png) center center repeat-x;
-      background-size: contain;
+    body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
     }
 
-    #back-buildings {
-      background: url(./static/assets/back-buildings.png) center center repeat-x;
-      background-size: contain;
-    }
-
-    #foreground-buildings {
-      position: absolute;
-      bottom: 0;
-      background: url(./static/assets/foreground.png) center center repeat-x;
-      background-size: contain;
+    .app-bg-wrapper {
+      background-image: url(./static/assets/foreground.png),
+        url(./static/assets/back-buildings.png),
+        url(./static/assets/far-buildings.png);
+      background-size: 100%, contain, cover;
+      background-position: bottom;
+      background-repeat: no-repeat, repeat-x;
+      height: 100%;
     }
   </style>
 
   <body>
-    <div class="app-bg-wrapper">
-      <div class="app-bg" id="far-buildings"></div>
-      <div class="app-bg" id="back-buildings"></div>
-      <div class="app-bg" id="foreground-buildings"></div>
-    </div>
+    <section class="intro-menu">
+      <div class="app-bg-wrapper"></div>
+      <div class="title-art"></div>
+      <div class="production-credit">
+        Swanson Design
+      </div>
+      <div class="prompt-start">Tap to Start</div>
+      </div>
+    </section>
   </body>
 </html>
