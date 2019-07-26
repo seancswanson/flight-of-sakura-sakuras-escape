@@ -5,36 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SAKURA I</title>
+     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="./static/style/css/style.css" rel="stylesheet"></link>
   </head>
 
-  <style>
-    body {
-      width: 100vw;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
-    .app-bg-wrapper {
-      background-image: url(./static/assets/foreground.png),
-        url(./static/assets/back-buildings.png),
-        url(./static/assets/far-buildings.png);
-      background-size: 100%, contain, cover;
-      background-position: bottom;
-      background-repeat: no-repeat, repeat-x;
-      height: 100%;
-    }
-  </style>
-
   <body>
-    <section class="intro-menu">
-      <div class="app-bg-wrapper"></div>
-      <div class="title-art"></div>
-      <div class="production-credit">
-        Swanson Design
+    <!-- <div class="reset-to-menu">Reset to Menu</div> -->
+    <div class="menu">
+      <div class="production-credit">Cygnus Studios</div>
+      <div class="game-logo"></div>
+      <div class="menu-btns">
+        <div class="menu-action-btn" id="play-btn">Play</div>
+        <div class="menu-action-btn" id="level-select-btn">Level Select</div>
       </div>
-      <div class="prompt-start">Tap to Start</div>
+      <div class="social-btns">
+        <div class="social-btn github"></div>
+        <div class="social-btn website"></div>
       </div>
-    </section>
+    </div>
+    <footer>Sean Swanson &copy; 2019</footer>
+    <!-- <section class="game-stage">
+      <div id="intro-splash">
+        <div class="app-bg-wrapper"></div>
+        <div class="title-art"></div>
+        <div class="production-credit">
+          Swanson Design
+        </div>
+        <div class="prompt-start">Tap to Start</div>
+        </div>
+      </div>
+      <div id="main-menu">
+        menu
+      </div> -->
+      <div id="game-wrapper">
+        <canvas id="game"></canvas>
+      </div>
+    <!-- </section> -->
+    <script type="text/javascript" src="./static/js/app.js"></script>
   </body>
 </html>

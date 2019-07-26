@@ -28,6 +28,7 @@
 - [x] 2. Install dependencies.
      - Babel + the companion packages
      - Install Nodemon for live code refresh on the dev server
+     - Install SCSS set up build process
 - [ ] 3. Create HTML file + serve it to localhost:3000/
 - [ ] 4. Create Canvas and center it for now.
 - [ ] 5. Link HTML file to app.js
