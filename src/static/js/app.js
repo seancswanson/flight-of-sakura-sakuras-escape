@@ -1,31 +1,22 @@
-class init {
+const query = document.querySelector.bind(document);
+const queryAll = document.querySelectorAll.bind(document);
+
+class Init {
   constructor() {
     console.log("This is init constructor");
-
-    this.query = document.querySelector.bind(document);
-    this.queryAll = document.querySelectorAll.bind(document);
 
     this.initMenuClickHandlers();
   }
 
   initMenuClickHandlers() {
-    // this.startPrompt = this.query(".prompt-start");
-    this.mainMenu = this.query(".menu");
-    this.playButton = this.query("#play-btn");
-    this.gameWrapper = this.query("#game-wrapper");
-    // this.introSplash = this.query("#intro-splash");
-    // this.mainMenu = this.query("#main-menu");
-    // this.resetButton = this.query(".reset-to-menu");
+    this.mainMenu = query(".menu");
+    this.playButton = query("#play-btn");
+    this.gameWrapper = query("#game-wrapper");
 
     this.playButton.addEventListener("click", () => {
       this.hideMenu();
       this.showGameWrapper();
     });
-
-    // this.resetButton.addEventListener("click", () => {
-    //     this.introMenu.classList.toggle('hidden');
-    //     this.introMenu.classList.toggle('shown');
-    // });
   }
 
   hideMenu() {
@@ -34,13 +25,31 @@ class init {
 
   showGameWrapper() {
     this.gameWrapper.classList.add("shown-flex");
+    const game = new Game();
   }
 }
 
-class game {
+class Game {
   constructor() {
+    const canvas = query("#game");
+    const ctx = canvas.getContext("2d");
+
     console.log("This is game constructor");
   }
 }
 
-new init();
+class Ship {
+  constructor(canvas, ctx) {
+    const shipPos = {
+      x: canvas.width / 2,
+      y: 10
+    }
+    
+    const shipHeight = 10;
+    const shipWidth = 40;
+
+    ctx.
+  }
+}
+
+new Init();
